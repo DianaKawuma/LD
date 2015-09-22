@@ -42,6 +42,15 @@ public class MainActivity extends Activity {
             }
         });
 
+        Button btn_test = (Button) findViewById(R.id.test);
+        btn_test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent calendarIntent =  new Intent(MainActivity.this, CalendarActivity.class);
+                startActivity(calendarIntent);
+            }
+        });
+
     }
 
     @Override
