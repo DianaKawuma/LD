@@ -43,7 +43,11 @@ public class RegisterActivity extends Activity {
 		
 		register_btn.setOnClickListener(onRegisterClickListener);
 		
+<<<<<<< HEAD
 
+=======
+		//spnServices = (Spinner)findViewById(R.id.spnServices);
+>>>>>>> origin/master
 
 		
 		chkTerms = (CheckBox)findViewById(R.id.chkTerms);
@@ -71,7 +75,11 @@ public class RegisterActivity extends Activity {
 			EditText email_adress = (EditText) findViewById(R.id.registerEmail);
 			EditText surname = (EditText) findViewById(R.id.registerSurname);
 
+<<<<<<< HEAD
 
+=======
+			//Spinner role = (Spinner) findViewById(R.id.spnRole);
+>>>>>>> origin/master
 
 			//user MUST agree to terms
 			if (!chkTerms.isChecked()) {
