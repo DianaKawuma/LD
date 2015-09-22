@@ -22,10 +22,6 @@ public class MainActivity extends Activity {
 
         context = this.getApplicationContext();
 
-        welcomeTo = (TextView)findViewById(R.id.welcome_text);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/CHEMIST.OTF");
-        welcomeTo.setTypeface(font);
-
 
         Button btn_login = (Button) findViewById(R.id.login);
         btn_login.setOnClickListener(new View.OnClickListener() {
@@ -51,7 +47,7 @@ public class MainActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 

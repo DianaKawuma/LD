@@ -43,7 +43,7 @@ public class RegisterActivity extends Activity {
 		
 		register_btn.setOnClickListener(onRegisterClickListener);
 		
-		spnServices = (Spinner)findViewById(R.id.spnServices);
+
 
 		
 		chkTerms = (CheckBox)findViewById(R.id.chkTerms);
@@ -71,7 +71,7 @@ public class RegisterActivity extends Activity {
 			EditText email_adress = (EditText) findViewById(R.id.registerEmail);
 			EditText surname = (EditText) findViewById(R.id.registerSurname);
 
-			Spinner role = (Spinner) findViewById(R.id.spnRole);
+
 
 			//user MUST agree to terms
 			if (!chkTerms.isChecked()) {
@@ -110,7 +110,7 @@ public class RegisterActivity extends Activity {
 				if (!confirm_password.getText().toString().trim().equals(password.getText().toString().trim())) {
 					vb.vibrate(1000);
 					Toast.makeText(getApplicationContext(), "Passwords do not match...", Toast.LENGTH_LONG).show();
-					return;
+
 				}
 
 

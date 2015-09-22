@@ -103,14 +103,13 @@ public class LoginActivity extends Activity {
 	
 	/**
 	 * Helper method to process the login response from Server
-	 * @param
 	 */
 	private void processLoginSuccessful() {
 
 
 	}
 
-	protected void onRuseme() {
+	protected void onResume() {
 		super.onResume();
 	}
 	
