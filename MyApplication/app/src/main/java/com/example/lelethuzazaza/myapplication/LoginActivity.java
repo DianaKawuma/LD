@@ -46,8 +46,8 @@ public class LoginActivity extends Activity {
 		
 		ed = sp.edit();
 		
-		Button regiter_btn = (Button) findViewById(R.id.registerBtn);
-		regiter_btn.setOnClickListener(new View.OnClickListener() {
+		Button register_btn = (Button) findViewById(R.id.registerBtn);
+		register_btn.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent loginIntent = new Intent(LoginActivity.this,RegisterActivity.class);				
@@ -91,7 +91,7 @@ public class LoginActivity extends Activity {
 
 	/**
 	 * Helper method to effect login request
-	 * @param username - username of the person trying to login (Cloud Tutor uses email addresses)
+	 * @param username - username of the person trying to login
 	 * @param password - password to authenticate
 	 */
 	private void sendLoginRequest(String username, String password) {
