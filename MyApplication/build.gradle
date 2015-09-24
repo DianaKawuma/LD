@@ -1,20 +1,50 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+
+    sourceSets{
+        main{
+            manifest.srcFile 'MyApplication/src/main/AndroidManifest.xml'
+        }
+    }
+
+    defaultConfig {
+        
+        minSdkVersion 8
+        targetSdkVersion 23
+    }
+
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+   
+    compile 'com.android.support:support-v4:23.0.1'
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile project(':subProject:caldroid')
+}
 
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.2.3'
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath 'com.android.tools.build:gradle:1.0.0'
     }
 }
 
 allprojects {
     repositories {
-        jcenter()
+        mavenCentral()
     }
 }
-apply from: 'https://raw.githubusercontent.com/shamanland/gradle-mvn-push/cc18d56549cdea03f744b6fff27911569394073e/gradle-mvn-push.gradle'

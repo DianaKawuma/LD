@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Personal Diary</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Main Activity -->
+    <string name="main_welcome">Personal Diary</string>
+    <string name="logo_description">Main Activity Logo</string>
+    <string name="register_text">Register</string>
+    <string name="login_text">Login</string>
+
+    <!-- Menu -->
+    <string name="menu_register_name">Register</string>
+    <string name="menu_login_name">Login</string>
+
+    <!-- Register -->
+    <string name="register_name">Name</string>
+    <string name="register_surname">Surname</string>
+    <string name="register_password">Password</string>
+    <string name="register_confirm_password">Confirm Password</string>
+    <string name="register_email">Email</string>
+    <string name="register_terms">Terms and Conditions</string>
+    <string name="register_button">Submit</string>
+
+    <!-- Login -->
+    <string name="user_name_hint"> Username </string>
+    <string name="pass_word_hint"> Password </string>
+    <string name="login_button_text"> Login </string>
+    <string name="register_button_text">Register</string>
+    <string name="forgot_button_text">Forgot</string>
+
+    <string name="app_name">Caldroid Sample</string>
+    <string name="customize">Customize</string>
+    <string name="show_dialog">Show Dialog</string>
+    <string name="undo">Undo</string>
+
+</resources>
