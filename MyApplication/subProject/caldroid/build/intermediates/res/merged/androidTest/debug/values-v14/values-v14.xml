@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Lelethu%20Zazaza/Desktop/LD/MyApplication/subProject/caldroid/src/main/res/values-v14/styles.xml -->
+    <!-- From: file:/C:/Users/Diana/Documents/GitHub/LD/MyApplication/subProject/caldroid/build/intermediates/bundles/debug/res/values-v14/values-v14.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- API 14 theme customizations can go here. -->

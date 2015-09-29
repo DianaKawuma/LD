@@ -11,8 +11,10 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends Activity {
-    TextView welcomeTo;
+import java.lang.Override;
+
+public class MainActivity extends Activity implements View.OnClickListener {
+   /* TextView welcomeTo;
     Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,9 +60,9 @@ public class MainActivity extends Activity {
             }
         });
 
-    }
+    } */
 
-    @Override
+   /* @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
 <<<<<<< HEAD
@@ -69,6 +71,29 @@ public class MainActivity extends Activity {
        // getMenuInflater().inflate(R.menu.main, menu);
 >>>>>>> origin/master
         return true;
+    } */
+   Button bLogout;
+    EditText etName, etSurname, etUsername;
+    @Override
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+
+        etName = (EditText) findViewById(R.id.etName);
+        etSurname = (EditText) findViewById(R.id.etSurname);
+        etUsername = (EditText) findViewById(R.id.etUsername);
+
+        bLogout = (Button) findViewById(R.id.bLogout);
+
+        bLogout.setOnClickListener(this);
     }
 
+    @Override
+    public void onClick(View v) {
+        switch(v.getId()){
+            case R.id.bLogout:
+                startActivity(new Intent(this, Login.class));
+                break;
+        }
+    }
 }

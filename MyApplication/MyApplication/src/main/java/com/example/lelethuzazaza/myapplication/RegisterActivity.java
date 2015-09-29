@@ -18,8 +18,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class RegisterActivity extends Activity {
-	private static String TAG = RegisterActivity.class.getSimpleName();
+import java.lang.Override;
+
+public class RegisterActivity extends Activity implements View.OnClickListener {
+	/*private static String TAG = RegisterActivity.class.getSimpleName();
 	
 	Vibrator vb;
 	JSONObject user;
@@ -54,18 +56,18 @@ public class RegisterActivity extends Activity {
 		
 
 		
-	}
+	}*/
 	
 	/**
 	 * 
 	 */
-	protected void onResume() {
+	/*protected void onResume() {
 		super.onResume();
-	}
+	} */
 	/**
 	 * 
 	 */
-	private OnClickListener onRegisterClickListener= new OnClickListener() {
+	/*private OnClickListener onRegisterClickListener= new OnClickListener() {
 		@Override
 		public void onClick(View v) {
 			// TODO Auto-generated method stub
@@ -125,7 +127,32 @@ public class RegisterActivity extends Activity {
 			}
 		}
 
-	};
+	}; */
+	Button bRegister;
+	EditText etName, etSurname, etUsername, etPassword;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_login);
+
+		etName = (EditText) findViewById(R.id.etName);
+		etSurname = (EditText) findViewById(R.id.etSurname);
+		etUsername = (EditText) findViewById(R.id.etUsername);
+		etPassword = (EditText) findViewById(R.id.etPassword);
+		bRegister = (Button) findViewById(R.id.bRegister);
+
+		bRegister.setOnClickListener(this);
+
+	}
+
+	@Override
+	public void onClick(View v) {
+		switch(v.getId()){
+			case R.id.bRegister:
 
 
+				break;
+		}
+	}
 }

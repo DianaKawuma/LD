@@ -1,5 +1,6 @@
 package com.example.lelethuzazaza.myapplication;
 
+import java.lang.Override;
 import java.net.CookieHandler;
 import java.net.CookieManager;
 import java.util.Map.Entry;
@@ -24,11 +25,12 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class LoginActivity extends Activity {
+public class LoginActivity extends ActionBarActivity implements View.OnClickListener {
 	
-	public static final String TAG = LoginActivity.class.getSimpleName();
+	/*public static final String TAG = LoginActivity.class.getSimpleName();
 	
 	private static final int DIALOG_LOADING = 0;
 		
@@ -87,31 +89,59 @@ public class LoginActivity extends Activity {
 				}
 			}
 		});
-	}
+	} */
 
 	/**
 	 * Helper method to effect login request
 	 * @param username - username of the person trying to login
 	 * @param password - password to authenticate
 	 */
-	private void sendLoginRequest(String username, String password) {
+	/*private void sendLoginRequest(String username, String password) {
 
 
 		
-	}		
-
+	} */
 	
 	/**
 	 * Helper method to process the login response from Server
 	 */
-	private void processLoginSuccessful() {
+	/*private void processLoginSuccessful() {
 
 
 	}
 
 	protected void onResume() {
 		super.onResume();
-	}
-	
+	} */
+	Button bLogin;
+	EditeText etUsername, etPassword;
+	TextView tvRegisterLink;
 
+	@Override
+	protected void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_login);
+
+		etUsername = (EditText) findViewById(R.id.etUsername);
+		etPassword = (EditText) findViewById(R.id.etPassword);
+		bLogin = (Button) findViewById(R.id.bLogin);
+		tvRegisterLink = (TextView) findViewById(R.id.tvRegisterLink);
+
+		bLogin.setOnClickListener(this);
+		tvRegisterLink.setOnClickListener(this);
+	}
+
+	@Override
+	public void onClick(View v) {
+		switch(v.getId()){
+			case R.id.bLogin:
+
+
+				break;
+
+			case R.id.tvRegisterLink:
+				startActivity(new Intent(this, Regster.class));
+				break;
+		}
+	}
 }
