@@ -1,5 +1,6 @@
 package imy320_android_assignment.personalassistant;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -37,7 +38,10 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
 
                 User registeredData = new User(name, surname, username, password);
 
+                startActivity(new Intent(this, Login.class));
+
                 break;
+
         }
     }
 }

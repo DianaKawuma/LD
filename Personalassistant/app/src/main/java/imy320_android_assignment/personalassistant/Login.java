@@ -52,6 +52,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
 
                 userLocalStore.storeUserData(user);
                 userLocalStore.setUserLoggedIn(true);
+<<<<<<< HEAD
                 
                 /*
                     Validate Login Input Fields
@@ -131,6 +132,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
                    //go to user homepage
 
                 }}
+=======
+
+                startActivity(new Intent(this, MainActivity.class));
+
+>>>>>>> origin/master
                 break;
 
             case R.id.tvRegisterLink:

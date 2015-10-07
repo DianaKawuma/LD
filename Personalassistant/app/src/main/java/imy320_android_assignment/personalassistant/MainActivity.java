@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        etName = (EditText) findViewById(R.id.etName);
+       /* etName = (EditText) findViewById(R.id.etName);
         etSurname = (EditText) findViewById(R.id.etSurname);
-        etUsername = (EditText) findViewById(R.id.etUsername);
+        etUsername = (EditText) findViewById(R.id.etUsername); */
 
         bLogout = (Button) findViewById(R.id.bLogout);
 
@@ -30,31 +30,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         userLocalStore = new UserLocalStore(this);
     }
 
-    @Override
+    /*@Override
     protected void onStart(){
         super.onStart();
         if(authenticate() == true){
             displayUserDetails();
         }
-    }
+    } */
 
-    private boolean authenticate(){
+  /*  private boolean authenticate(){
         return userLocalStore.getUserLoggedIn();
-    }
+    } */
 
-    private void displayUserDetails(){
+  /*  private void displayUserDetails(){
         User user = userLocalStore.getLoggedInUser();
 
         etUsername.setText(user.username);
         etName.setText(user.name);
         etSurname.setText(user.surname);
-    }
+    } */
     @Override
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.bLogout:
-                userLocalStore.clearUserData();
-                userLocalStore.setUserLoggedIn(false);
+              /*  userLocalStore.clearUserData();
+                userLocalStore.setUserLoggedIn(false); */
 
                 startActivity(new Intent(this, Login.class));
                 break;
