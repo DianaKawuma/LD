@@ -108,7 +108,7 @@ public class CalendarAdapter extends BaseAdapter {
             setSelected(v);
             previousView = v;
         } else {
-            v.setBackgroundResource(R.drawable.list_item_background);
+            v.setBackgroundResource(R.mipmap.list_item_background);
         }
         dayView.setText(gridvalue);
 
@@ -135,10 +135,10 @@ public class CalendarAdapter extends BaseAdapter {
 
     public View setSelected(View view) {
         if (previousView != null) {
-            previousView.setBackgroundResource(R.drawable.list_item_background);
+            previousView.setBackgroundResource(R.mipmap.list_item_background);
         }
         previousView = view;
-        view.setBackgroundResource(R.drawable.calendar_cel_selectl);
+        view.setBackgroundResource(R.mipmap.calendar_cel_selectl);
         return view;
     }
 

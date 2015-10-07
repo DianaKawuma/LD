@@ -8,11 +8,13 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 public class CalendarView extends Activity {
 
@@ -32,7 +34,7 @@ public class CalendarView extends Activity {
         itemmonth = (Calendar) month.clone();
 
         items = new ArrayList<String>();
-        adapter = new CalendarAdapter(this, month);
+        adapter = new CalendarAdapter(this, (GregorianCalendar) month);
 
         GridView gridview = (GridView) findViewById(R.id.gridview);
         gridview.setAdapter(adapter);
