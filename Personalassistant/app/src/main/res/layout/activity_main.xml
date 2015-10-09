@@ -32,11 +32,34 @@
         android:clickable="true"
         android:focusable="true" />
 
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bAddEvent"
+            android:text="Add Event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"/>
+
+        <Button
+            android:id="@+id/bShowEvents"
+            android:text="Show Events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"/>
+        </LinearLayout>
+
     <Button
         android:id="@+id/bLogout"
         android:text="Logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+
 
 </LinearLayout>
 
