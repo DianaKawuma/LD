@@ -85,7 +85,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
                     //http post
                     try{
                         //HttpClient httpclient = new DefaultHttpClient();
-                        //HttpPost httppost = new HttpPost("http://127.0.0.1/food.php");
+                        //HttpPost httppost = new HttpPost("http://127.0.0.1/Register.php");
                         //httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
                         //HttpResponse response = httpclient.execute(httppost);
                         //HttpEntity entity = response.getEntity();
@@ -131,9 +131,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
 
                    //go to user homepage
 
+
                 }}
-
-
                 startActivity(new Intent(this, MainActivity.class));
 
 
