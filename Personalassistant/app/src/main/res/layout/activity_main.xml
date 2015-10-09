@@ -12,6 +12,41 @@
         android:clickable="true"
         android:focusable="true">
 
+        <RelativeLayout
+            android:id="@+id/previous"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/arrow_left" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dip"
+            android:textColor="#000000"
+            android:textSize="18dip"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/next"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/arrow_right" />
+        </RelativeLayout>
         <CalendarView
             android:id="@+id/calendarView1"
             android:layout_width="match_parent"
@@ -21,7 +56,7 @@
 
     </RelativeLayout>
 
-    <ListView
+    <!--ListView
         android:id="@+id/dailyView1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -30,13 +65,36 @@
         android:layout_marginRight="5dp"
         android:layout_gravity="center_horizontal|center"
         android:clickable="true"
-        android:focusable="true" />
+        android:focusable="true" /-->
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bAddEvent"
+            android:text="Add Event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"/>
+
+        <Button
+            android:id="@+id/bShowEvents"
+            android:text="Show Events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"/>
+        </LinearLayout>
 
     <Button
         android:id="@+id/bLogout"
         android:text="Logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+
 
 </LinearLayout>
 
