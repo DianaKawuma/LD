@@ -18,11 +18,11 @@
             android:layout_height="30dip"
             android:layout_alignParentLeft="true" >
 
-            <ImageView
+          <!--  <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="@mipmap/arrow_left" />
+                android:background="@mipmap/arrow_left" /> -->
         </RelativeLayout>
 
         <TextView
@@ -41,11 +41,11 @@
             android:layout_height="30dip"
             android:layout_alignParentRight="true" >
 
-            <ImageView
+           <!-- <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:background="@mipmap/arrow_right" />
+                android:background="@mipmap/arrow_right" /> -->
         </RelativeLayout>
         <CalendarView
             android:id="@+id/calendarView1"
@@ -66,6 +66,7 @@
         android:layout_gravity="center_horizontal|center"
         android:clickable="true"
         android:focusable="true" /-->
+
 
     <LinearLayout
         android:id="@+id/buttonContainer"
@@ -89,8 +90,8 @@
         </LinearLayout>
 
     <Button
-        android:id="@+id/bLogout"
-        android:text="Logout"
+        android:id="@+id/bToDoList"
+        android:text="To-do-list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

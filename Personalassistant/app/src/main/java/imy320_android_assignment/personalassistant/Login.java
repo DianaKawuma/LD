@@ -41,6 +41,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
         bLogin.setOnClickListener(this);
         tvRegisterLink.setOnClickListener(this);
 
+
         userLocalStore = new UserLocalStore(this);
     }
 
@@ -71,12 +72,12 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
                     }
 
                 } 
-                else {
+                /*else {
                     //capture details
                     String u_name = etUsername.getText().toString().trim();
                     String p_word = etPassword.getText().toString().trim();
 
-<<<<<<< HEAD
+
                     //verify that user exists
                     String result = null;
                     InputStream is = null;
@@ -132,19 +133,16 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
                    //go to user homepage
 
 
-                }}
+                }}*/
+
                 startActivity(new Intent(this, MainActivity.class));
-=======
->>>>>>> origin/master
-
-                    startActivity(new Intent(this, MainActivity.class));
-                }
-
                 break;
 
-            case R.id.tvRegisterLink:
-                startActivity(new Intent(this, Register.class));
-                break;
+                case R.id.tvRegisterLink:
+                    startActivity(new Intent(this, Register.class));
+                    break;
+
         }
     }
 }
+
