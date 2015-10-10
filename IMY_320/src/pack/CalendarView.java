@@ -31,6 +31,8 @@ public class CalendarView extends Activity {
     // marker.
     public static ArrayList<Event> items; // container to store calendar items which
     // needs showing the event marker
+    
+     
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -125,9 +127,28 @@ public class CalendarView extends Activity {
             
         });
         
+        
+
+        Button bToDoList = (Button) findViewById(R.id.bToDoList);
+        bToDoList.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                
+            	showToast("To do list");
+            	toDoList();
+            		
+            }
+        });
+        
     }
         
-        
+     
+    protected void toDoList()
+    {
+    	startActivity(new Intent(this, ToDoList.class));
+    	
+    }
     
     protected void createEvent(String currentDate)
     {

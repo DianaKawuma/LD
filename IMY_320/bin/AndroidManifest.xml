@@ -43,6 +43,11 @@
             android:name="pack.ShowAllEvents"
             android:label="List of Events" >
         </activity>
+        
+         <activity
+            android:name="pack.ToDoList"
+            android:label="To Do List" >
+        </activity>
 	
     </application>
 

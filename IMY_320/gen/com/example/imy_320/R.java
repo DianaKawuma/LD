@@ -32,24 +32,29 @@ public final class R {
         public static final int list_item_background=0x7f020009;
     }
     public static final class id {
-        public static final int action_settings=0x7f090017;
+        public static final int action_settings=0x7f09001c;
         public static final int bAddEvent=0x7f090004;
+        public static final int bCalendar=0x7f090012;
         public static final int bLogin=0x7f090007;
         public static final int bLogout=0x7f09000e;
         public static final int bRegister=0x7f090011;
-        public static final int bShowAllEvents=0x7f090014;
+        public static final int bShowAllEvents=0x7f090018;
         public static final int bShowEvents=0x7f09000d;
+        public static final int bToDoList=0x7f090019;
+        public static final int btnAddItem=0x7f090014;
         public static final int calendarView1=0x7f09000c;
-        public static final int date=0x7f090015;
-        public static final int date_icon=0x7f090016;
+        public static final int date=0x7f09001a;
+        public static final int date_icon=0x7f09001b;
         public static final int etName=0x7f09000f;
+        public static final int etNewItem=0x7f090015;
         public static final int etPassword=0x7f090006;
         public static final int etSurname=0x7f090010;
         public static final int etUsername=0x7f090005;
         public static final int et_event_heading=0x7f090002;
         public static final int et_event_notes=0x7f090003;
-        public static final int gridview=0x7f090013;
-        public static final int header=0x7f090012;
+        public static final int gridview=0x7f090017;
+        public static final int header=0x7f090016;
+        public static final int lvItems=0x7f090013;
         public static final int next=0x7f09000b;
         public static final int previous=0x7f090009;
         public static final int title=0x7f09000a;
@@ -63,13 +68,15 @@ public final class R {
         public static final int activity_main=0x7f040002;
         public static final int activity_register=0x7f040003;
         public static final int activity_show_all_events=0x7f040004;
-        public static final int calendar=0x7f040005;
-        public static final int calendar_item=0x7f040006;
+        public static final int activity_to_do_list=0x7f040005;
+        public static final int calendar=0x7f040006;
+        public static final int calendar_item=0x7f040007;
     }
     public static final class menu {
         public static final int menu_login=0x7f080000;
         public static final int menu_main=0x7f080001;
         public static final int menu_register=0x7f080002;
+        public static final int menu_to_do_list=0x7f080003;
     }
     public static final class mipmap {
         public static final int appicon=0x7f030000;
