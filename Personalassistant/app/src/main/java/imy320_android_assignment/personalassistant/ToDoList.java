@@ -27,6 +27,7 @@ public class ToDoList extends AppCompatActivity implements View.OnClickListener{
         setContentView(R.layout.activity_to_do_list);
 
         bCalendar = (Button) findViewById(R.id.bCalendar);
+        bCalendar.setOnClickListener(this);
 
         lvItems = (ListView) findViewById(R.id.lvItems);
         items = new ArrayList<String>();
