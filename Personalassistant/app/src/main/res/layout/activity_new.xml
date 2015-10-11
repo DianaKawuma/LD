@@ -10,14 +10,22 @@
         android:text="Add Event"
         android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:background="#336699"/>
 
     <Button
         android:id="@+id/bAddToDo"
         android:text="Add To Do"
         android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:background="#336699"/>
 
 
 </LinearLayout>

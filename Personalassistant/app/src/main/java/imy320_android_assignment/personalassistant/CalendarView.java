@@ -242,4 +242,5 @@ public class CalendarView extends Activity {
 
         }
     };
+
 }

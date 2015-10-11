@@ -5,7 +5,7 @@
     android:background="@mipmap/background"
     android:orientation="vertical" >
 
-    <RelativeLayout
+   <RelativeLayout
         android:id="@+id/header"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -56,32 +56,53 @@
         android:layout_gravity="center_horizontal"
         android:listSelector="@android:color/transparent"
         android:numColumns="7"
-        android:stretchMode="columnWidth" />
+        android:stretchMode="columnWidth"
+        android:background="#FFFFFF"/>
 
 
 
-
-
-    <Button
-        android:id="@+id/bShowAllEvents"
-        android:text="Show All Events"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.2"/>
+        android:layout_weight="0.2">
+        <Button
+            android:id="@+id/bShowAllEvents"
+            android:text="Show All Events"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textColor="#ffffff"
+            android:background="#336699"
+            />
 
-    <!-- Button
-   android:id="@+id/bToDoList"
-   android:text="To-do-list"
-   android:layout_width="match_parent"
-   android:layout_height="wrap_content"
-   android:layout_weight="0.2" /-->
+        <!-- android:layout_alignRight="@+id/bShowAllEvents" -->
+        <!--<ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/ImageButton01" />-->
 
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2">
     <Button
         android:id="@+id/bShowAllToDos"
         android:text="Show All To Dos"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.2" />
-
+        android:minHeight="150dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="#ffffff"
+        android:background="#336699"/>
+    </RelativeLayout>
 
 </LinearLayout>
