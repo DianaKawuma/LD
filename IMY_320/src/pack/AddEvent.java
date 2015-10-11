@@ -66,8 +66,8 @@ public class AddEvent extends Activity implements View.OnClickListener{
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.bAddEvent:
-            	CalendarView.items.add(new Event(et_eventHeading.getText().toString(),selectedDate,et_eventNote.getText().toString()));
-            	CalendarView.adapter.setItems(CalendarView.items);
+            	CalendarView.events.add(new Event(et_eventHeading.getText().toString(),selectedDate,et_eventNote.getText().toString()));
+            	CalendarView.adapter.populateListOfEvents(CalendarView.events);
             	CalendarView.adapter.notifyDataSetChanged();
             	Toast.makeText(this, "Here in Add Event Button On Click", Toast.LENGTH_SHORT).show();
             	this.finish();            	

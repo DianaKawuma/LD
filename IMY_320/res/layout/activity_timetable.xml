@@ -1,0 +1,487 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_alignParentLeft="true"
+android:layout_alignParentRight="true"
+android:layout_alignParentTop="true"
+android:layout_marginBottom="16dp" >
+
+		<TableRow
+		    android:id="@+id/top_row"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent">
+		
+		    <TextView
+		        android:id="@+id/spaceView"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent" />
+		
+		    <TextView
+		        android:id="@+id/monday"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:text="Mon " />
+		
+		    <TextView
+		        android:id="@+id/tuesday"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:text="Tue " />
+		
+		    <TextView
+		        android:id="@+id/wednesday"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:text="Wed " />
+		
+		    <TextView
+		        android:id="@+id/thursday"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:text="Thur " />
+		
+		    <TextView
+		        android:id="@+id/friday"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:text="Fri" />
+		</TableRow>
+		
+		<TableRow
+		    android:id="@+id/tableRow1"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+		
+		    <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="5dp"
+		        android:text="07:30" />
+		    
+		    <EditText
+		        android:id="@+id/mon_07:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/tue_07:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/wed_07:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/thur_07:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/fri_07:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		
+		</TableRow>
+		
+		<TableRow
+		    android:id="@+id/tableRow2"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+		
+		    <TextView
+		        android:id="@+id/textView2"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="5dp"
+		        android:text="08:30" />
+		    
+		    
+		    <EditText
+		        android:id="@+id/mon_08:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/tue_08:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/wed_08:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/thur_08:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/fri_08:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		</TableRow>
+		
+		<TableRow
+		    android:id="@+id/tableRow3"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+		
+		    <TextView
+		        android:id="@+id/textView3"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="5dp"
+		        android:text="09:30" />
+		    
+		    
+		    <EditText
+		        android:id="@+id/mon_09:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/tue_09:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/wed_09:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/thur_09:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/fri_09:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		</TableRow>
+		
+		<TableRow
+		    android:id="@+id/tableRow4"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+		
+		    <TextView
+		        android:id="@+id/textView4"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="5dp"
+		        android:text="10:30" />
+		    
+		    <EditText
+		        android:id="@+id/mon_10:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/tue_10:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/wed_10:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/thur_10:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/fri_10:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		</TableRow>
+		
+		<TableRow
+		    android:id="@+id/tableRow5"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+		
+		    <TextView
+		        android:id="@+id/textView5"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="5dp"
+		        android:text="11:30" />
+		    
+		    
+		    <EditText
+		        android:id="@+id/mon_11:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/tue_11:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/wed_11:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/thur_11:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/fri_11:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		</TableRow>
+		
+		<TableRow
+		    android:id="@+id/tableRow6"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+		
+		    <TextView
+		        android:id="@+id/textView6"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="5dp"
+		        android:text="12:30" />
+		    
+		    
+		    <EditText
+		        android:id="@+id/mon_12:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/tue_12:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/wed_12:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/thur_12:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/fri_12:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		</TableRow>
+		
+		<TableRow
+		    android:id="@+id/tableRow7"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+		
+		    <TextView
+		        android:id="@+id/textView7"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="5dp"
+		        android:text="13:30" />
+		    
+		    <EditText
+		        android:id="@+id/mon_13:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/tue_13:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/wed_13:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/thur_13:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/fri_13:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		</TableRow>
+		
+		<TableRow
+		    android:id="@+id/tableRow8"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+		
+		    <TextView
+		        android:id="@+id/textView8"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="5dp"
+		        android:text="14:30" />
+		    
+		    
+		    <EditText
+		        android:id="@+id/mon_14:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/tue_14:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/wed_14:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/thur_14:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/fri_14:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		</TableRow>
+		
+		<TableRow
+		    android:id="@+id/tableRow9"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+		
+		    <TextView
+		        android:id="@+id/textView9"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="5dp"
+		        android:text="15:30" />
+		    
+		    
+		    <EditText
+		        android:id="@+id/mon_15:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/tue_15:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/wed_15:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/thur_15:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/fri_15:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		</TableRow>
+		
+		<TableRow
+		    android:id="@+id/tableRow10"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+		
+		    <TextView
+		        android:id="@+id/textView10"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="5dp"
+		        android:text="16:30" />
+		    
+		    <EditText
+		        android:id="@+id/mon_16:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/tue_16:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/wed_16:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/thur_16:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/fri_16:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		</TableRow>
+		
+		<TableRow
+		    android:id="@+id/tableRow11"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+		
+		    <TextView
+		        android:id="@+id/textView11"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:paddingLeft="5dp"
+		        android:text="17:30" />
+		    
+		    <EditText
+		        android:id="@+id/mon_17:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/tue_17:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/wed_17:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/thur_17:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/fri_17:30"
+		        android:layout_width="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_height="wrap_content" />
+		</TableRow>
+		
+		
+</TableLayout>

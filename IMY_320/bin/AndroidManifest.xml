@@ -63,6 +63,11 @@
             android:name="pack.NewActivity"
             android:label="To Do List" >
         </activity>
+        
+         <activity
+            android:name="pack.TimetableActivity"
+            android:label="Timetable" >
+        </activity>
 	
     </application>
 

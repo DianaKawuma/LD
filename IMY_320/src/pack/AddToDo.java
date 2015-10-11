@@ -65,7 +65,7 @@ public class AddToDo extends Activity implements View.OnClickListener{
         switch(v.getId()){
             case R.id.bAddTodo:
             	CalendarView.todos.add(new ToDoItem(selectedDate,et_todo.getText().toString()));
-            	CalendarView.adapter.setToDoItems(CalendarView.todos);
+            	CalendarView.adapter.populateListOfToDos(CalendarView.todos);
             	CalendarView.adapter.notifyDataSetChanged();
             	Toast.makeText(this, "Here in Add To Do Button On Click", Toast.LENGTH_SHORT).show();
             	this.finish();            	
