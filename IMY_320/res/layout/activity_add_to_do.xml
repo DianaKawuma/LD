@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_event_date"
+        android:layout_width="wrap_content"
+        android:text="Date: "
+        android:layout_height="wrap_content" />
+    
+    
+    <EditText
+        android:id="@+id/et_todo"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" /> 
+   
+    
+
+    <Button
+        android:id="@+id/bAddTodo"
+        android:text="Add To Do Item"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+   
+</LinearLayout>

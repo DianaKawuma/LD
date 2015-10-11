@@ -18,26 +18,24 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class AddEvent extends Activity implements View.OnClickListener{
+public class AddToDo extends Activity implements View.OnClickListener{
 	String selectedDate = "date";
-	EditText et_eventHeading;
-    EditText et_eventNote;
+    EditText et_todo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_event);
+        setContentView(R.layout.activity_add_to_do);
 
-        Button bAddEvent;
+        Button bAddToDo;
         TextView tvEventDate;
         
-        bAddEvent = (Button) findViewById(R.id.bAddEvent);
+        bAddToDo = (Button) findViewById(R.id.bAddTodo);
         tvEventDate = (TextView) findViewById(R.id.tv_event_date);
         
-        et_eventHeading = (EditText) findViewById(R.id.et_event_heading);
-        et_eventNote = (EditText) findViewById(R.id.et_event_notes);
+        et_todo = (EditText) findViewById(R.id.et_todo);
 
-        bAddEvent.setOnClickListener(this);        
+        bAddToDo.setOnClickListener(this);        
         
         if(savedInstanceState == null)
         {
@@ -65,11 +63,11 @@ public class AddEvent extends Activity implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         switch(v.getId()){
-            case R.id.bAddEvent:
-            	CalendarView.items.add(new Event(et_eventHeading.getText().toString(),selectedDate,et_eventNote.getText().toString()));
-            	CalendarView.adapter.setItems(CalendarView.items);
+            case R.id.bAddTodo:
+            	CalendarView.todos.add(new ToDoItem(selectedDate,et_todo.getText().toString()));
+            	CalendarView.adapter.setToDoItems(CalendarView.todos);
             	CalendarView.adapter.notifyDataSetChanged();
-            	Toast.makeText(this, "Here in Add Event Button On Click", Toast.LENGTH_SHORT).show();
+            	Toast.makeText(this, "Here in Add To Do Button On Click", Toast.LENGTH_SHORT).show();
             	this.finish();            	
                 break;
         }

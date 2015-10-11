@@ -31,7 +31,7 @@ public class CalendarView extends Activity {
     // marker.
     public static ArrayList<Event> items; // container to store calendar items which
     // needs showing the event marker
-    
+    public static ArrayList<ToDoItem> todos;
      
 
     public void onCreate(Bundle savedInstanceState) {
@@ -42,6 +42,7 @@ public class CalendarView extends Activity {
         itemmonth = (Calendar) month.clone();
 
         items = new ArrayList<Event>();
+        todos = new ArrayList<ToDoItem>();
         adapter = new CalendarAdapter(this, (GregorianCalendar) month);
 
         GridView gridview = (GridView) findViewById(R.id.gridview);
@@ -92,6 +93,24 @@ public class CalendarView extends Activity {
 
             }
         });
+        
+        Button showAllToDos = (Button) findViewById(R.id.bShowAllToDos);
+        showAllToDos.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                
+            	showToast("Showing all to-dos");
+            	for(ToDoItem x: todos)
+            	{
+            		System.out.println("A To Date: " + x.getEventDate());
+            		System.out.println("A To Do: " + x.getEventToDo());
+            		
+            	}
+            	showAllToDos();
+
+            }
+        });
 
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         	
@@ -120,7 +139,12 @@ public class CalendarView extends Activity {
                 //showToast(selectedGridDate);
                 
                 
-                createEvent(selectedGridDate);
+                //createEvent(selectedGridDate);
+                
+                /*
+                 * Go To Another Activity With 2 Buttons, Add Event, Add To do
+                 */
+                newActivity(selectedGridDate);
 
             }
             
@@ -129,7 +153,7 @@ public class CalendarView extends Activity {
         
         
 
-        Button bToDoList = (Button) findViewById(R.id.bToDoList);
+       /* Button bToDoList = (Button) findViewById(R.id.bToDoList);
         bToDoList.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -139,7 +163,7 @@ public class CalendarView extends Activity {
             	toDoList();
             		
             }
-        });
+        });*/
         
     }
         
@@ -158,9 +182,22 @@ public class CalendarView extends Activity {
     	startActivity(addEventIntent);
     }
     
+    protected void newActivity(String currentDate)
+    {
+    	
+    	Intent addEventIntent = new Intent(this, NewActivity.class);
+    	addEventIntent.putExtra("CURRENT_DATE", currentDate);
+    	startActivity(addEventIntent);
+    }
+    
     protected void showAllEvents()
     {
     	startActivity(new Intent(this, ShowAllEvents.class));
+    }
+    
+    protected void showAllToDos()
+    {
+    	startActivity(new Intent(this, ShowAllToDos.class));
     }
     
     protected void setNextMonth() {

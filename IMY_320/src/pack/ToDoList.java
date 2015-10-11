@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import com.example.imy_320.R;
 
 public class ToDoList extends Activity implements View.OnClickListener{
-    private ArrayList<String> items;
+    static ArrayList<String> items;
     private ArrayAdapter<String> itemsAdapter;
     private ListView lvItems;
     Button bCalendar;
@@ -34,12 +34,20 @@ public class ToDoList extends Activity implements View.OnClickListener{
 
         lvItems = (ListView) findViewById(R.id.lvItems);
         items = new ArrayList<String>();
-        itemsAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, items);
+        itemsAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, items);
         lvItems.setAdapter(itemsAdapter);
        // items.add("First Item");
         //items.add("Second Item");
         setupListViewListener();
+        
+        for(String x: ToDoList.items)
+    	{
+        	       	
+        	items.add(x);
+    	}
+        
+        itemsAdapter.notifyDataSetChanged();
+        
         
         bCalendar.setOnClickListener(new View.OnClickListener() {
 

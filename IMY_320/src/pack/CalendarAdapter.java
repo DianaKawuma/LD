@@ -40,6 +40,7 @@ public class CalendarAdapter extends BaseAdapter {
     DateFormat df;
 
     private ArrayList<Event> items;
+    private ArrayList<ToDoItem> todos;
     public static List<String> dayString;
     private View previousView;
 
@@ -50,6 +51,7 @@ public class CalendarAdapter extends BaseAdapter {
         mContext = c;
         month.set(GregorianCalendar.DAY_OF_MONTH, 1);
         this.items = new ArrayList<Event>();
+        this.todos = new ArrayList<ToDoItem>();
         df = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
         curentDateString = df.format(selectedDate.getTime());
         refreshDays();
@@ -66,6 +68,19 @@ public class CalendarAdapter extends BaseAdapter {
             }
         }
         this.items = items;
+    }
+    
+    public void setToDoItems(ArrayList<ToDoItem> items) 
+    {
+        for (int i = 0; i != items.size(); i++) 
+        {
+        	if (items.get(i).getEventDate().length() == 1) 
+            {
+                //items.set(i, "0" + items.get(i));
+                items.get(i).setEventDate("0" + items.get(i).getEventDate());
+            }
+        }
+        this.todos = items;
     }
 
     public int getCount() {
@@ -143,12 +158,29 @@ public class CalendarAdapter extends BaseAdapter {
         	}
         }
         
+        boolean dateHasToDo = false;
         
-        if (date.length() > 0 && items != null && dateHasEvent) {
-            iw.setVisibility(View.VISIBLE);
-        } else {
-            iw.setVisibility(View.INVISIBLE);
+        for(ToDoItem x: todos)
+        {
+        	if(x.getEventDate().equals(date))
+        	{
+        		dateHasToDo = true;
+        		break;
+        	}
         }
+        
+        
+        if ((date.length() > 0 && items != null && dateHasEvent) || (date.length() > 0 && todos != null && dateHasToDo)) 
+        {
+            iw.setVisibility(View.VISIBLE);
+        } 
+        else 
+        {
+        	iw.setVisibility(View.INVISIBLE);
+        }
+        
+        
+        
         return v;
     }
 

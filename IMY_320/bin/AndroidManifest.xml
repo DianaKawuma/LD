@@ -48,6 +48,21 @@
             android:name="pack.ToDoList"
             android:label="To Do List" >
         </activity>
+        
+         <activity
+            android:name="pack.ShowAllToDos"
+            android:label="To Do List" >
+        </activity>
+        
+         <activity
+            android:name="pack.AddToDo"
+            android:label="To Do List" >
+        </activity>
+        
+         <activity
+            android:name="pack.NewActivity"
+            android:label="To Do List" >
+        </activity>
 	
     </application>
 

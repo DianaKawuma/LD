@@ -6,10 +6,9 @@ import com.example.imy_320.R;
 
 import android.app.ListActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ArrayAdapter;
 
-public class ShowAllEvents extends ListActivity {
+public class ShowAllToDos extends ListActivity {
     
     ArrayList<String> listItems=new ArrayList<String>();
 
@@ -18,21 +17,20 @@ public class ShowAllEvents extends ListActivity {
 
 
     @Override
-    public void onCreate(Bundle icicle) {
+    public void onCreate(Bundle icicle) 
+    {
         super.onCreate(icicle);
-        setContentView(R.layout.activity_show_all_events);
+        setContentView(R.layout.activity_show_all_to_dos);
         adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,listItems);
         setListAdapter(adapter);
         
-        String eventDetails = "";
+        String toDoEntry = ""; 
         
-        for(Event x: CalendarView.items)
+        for(ToDoItem x: CalendarView.todos)
     	{
-        	eventDetails = "Event:		" + x.getEventHeading()+ "\n"+
-    		"Date:		" + x.getEventDate() + "\n" +
-    		"Note:		" + x.getEventNote();
-        	
-        	listItems.add(eventDetails);
+        	toDoEntry = x.getEventDate() + "\n"+
+        				x.getEventToDo();
+        	listItems.add(toDoEntry);
     	}
         
         adapter.notifyDataSetChanged();
