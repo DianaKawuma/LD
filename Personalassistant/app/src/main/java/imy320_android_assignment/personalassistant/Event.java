@@ -34,7 +34,4 @@ public class Event {
         this.eventNote = eventNote;
     }
 
-
-
 }
-

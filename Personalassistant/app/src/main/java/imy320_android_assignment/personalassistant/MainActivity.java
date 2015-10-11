@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         bToDoList = (Button) findViewById(R.id.bToDoList);
         //bToDoList.setTextColor(Color.GREEN);
-       // textView.setTextColor(Color.BLUE);
+        // textView.setTextColor(Color.BLUE);
         bToDoList.setOnClickListener(this);
 
     }

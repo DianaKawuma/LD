@@ -21,17 +21,28 @@
             android:label="Calendar" >
         </activity>
         <activity
-            android:name=".AddEvent"
-            android:label="Add Event" >
-        </activity>
-
-        <activity
-            android:name=".ShowAllEvents"
-            android:label="List of Events" >
-        </activity>
-        <activity
             android:name=".ToDoList"
             android:label="@string/title_activity_to_do_list" >
+        </activity>
+        <activity
+            android:name=".AddEvent"
+            android:label="@string/title_activity_add_event" >
+        </activity>
+        <activity
+            android:name=".ShowAllEvents"
+            android:label="@string/title_activity_show_all_events" >
+        </activity>
+        <activity
+            android:name=".AddToDo"
+            android:label="@string/title_activity_add_to_do" >
+        </activity>
+        <activity
+            android:name=".ShowAllToDos"
+            android:label="@string/title_activity_show_all_to_dos" >
+        </activity>
+        <activity
+            android:name=".NewActivity"
+            android:label="@string/title_activity_new" >
         </activity>
     </application>
 

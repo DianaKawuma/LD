@@ -1,5 +1,6 @@
 package imy320_android_assignment.personalassistant;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,11 +12,14 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class ToDoList extends AppCompatActivity implements View.OnClickListener{
-    private ArrayList<String> items;
+//import com.example.imy_320.R;
+
+public class ToDoList extends Activity implements View.OnClickListener{
+    static ArrayList<String> items;
     private ArrayAdapter<String> itemsAdapter;
     private ListView lvItems;
     Button bCalendar;
@@ -27,27 +31,38 @@ public class ToDoList extends AppCompatActivity implements View.OnClickListener{
         setContentView(R.layout.activity_to_do_list);
 
         bCalendar = (Button) findViewById(R.id.bCalendar);
-        bCalendar.setOnClickListener(this);
 
         lvItems = (ListView) findViewById(R.id.lvItems);
         items = new ArrayList<String>();
-        itemsAdapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, items);
+        itemsAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, items);
         lvItems.setAdapter(itemsAdapter);
-       // items.add("First Item");
+        // items.add("First Item");
         //items.add("Second Item");
         setupListViewListener();
 
+        for(String x: ToDoList.items)
+        {
+
+            items.add(x);
+        }
+
+        itemsAdapter.notifyDataSetChanged();
+
+
+        bCalendar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(ToDoList.this, "Pressing Calendar Button", Toast.LENGTH_SHORT).show();
+                finish();
+
+            }
+        });
+
     }
 
-    @Override
-    public void onClick(View v) {
-        switch(v.getId()){
-            case R.id.bCalendar:
-                startActivity(new Intent(this, MainActivity.class));
-                break;
-        }
-    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -77,6 +92,14 @@ public class ToDoList extends AppCompatActivity implements View.OnClickListener{
                     }
 
                 });
+    }
+
+
+
+    @Override
+    public void onClick(View arg0) {
+        // TODO Auto-generated method stub
+
     }
 
 

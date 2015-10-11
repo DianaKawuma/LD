@@ -59,6 +59,9 @@
         android:stretchMode="columnWidth" />
 
 
+
+
+
     <Button
         android:id="@+id/bShowAllEvents"
         android:text="Show All Events"
@@ -66,9 +69,16 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.2"/>
 
+    <!-- Button
+   android:id="@+id/bToDoList"
+   android:text="To-do-list"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:layout_weight="0.2" /-->
+
     <Button
-        android:id="@+id/bToDoList"
-        android:text="To-do-list"
+        android:id="@+id/bShowAllToDos"
+        android:text="Show All To Dos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.2" />
