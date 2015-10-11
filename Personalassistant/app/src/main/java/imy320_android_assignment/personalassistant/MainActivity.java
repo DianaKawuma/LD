@@ -11,7 +11,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     Button bToDoList;
     TextView textView;
-    CalendarView calendarView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.bToDoList:
-                startActivity(new Intent(this, ToDoList.class));
+                startActivity(new Intent(this, CalendarView.class));
                 break;
         }
     }
