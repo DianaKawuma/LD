@@ -4,6 +4,10 @@ package imy320_android_assignment.personalassistant;
 
 //import pack.CalendarView;
 
+//import com.example.imy_320.R;
+
+//import pack.CalendarView;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -40,13 +44,13 @@ public class AddToDo extends Activity implements View.OnClickListener{
             if(extras != null)
             {
                 selectedDate = extras.getString("CURRENT_DATE");
-                Toast.makeText(this, selectedDate+" 1", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, selectedDate+" 1", Toast.LENGTH_SHORT).show();
             }
         }
         else
         {
             selectedDate = (String)savedInstanceState.getSerializable("CURRENT_DATE");
-            Toast.makeText(this, selectedDate+" 2", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, selectedDate+" 2", Toast.LENGTH_SHORT).show();
         }
 
         tvEventDate.setText(selectedDate);
@@ -61,9 +65,9 @@ public class AddToDo extends Activity implements View.OnClickListener{
         switch(v.getId()){
             case R.id.bAddTodo:
                 CalendarView.todos.add(new ToDoItem(selectedDate,et_todo.getText().toString()));
-                CalendarView.adapter.setToDoItems(CalendarView.todos);
+                CalendarView.adapter.populateListOfToDos(CalendarView.todos);
                 CalendarView.adapter.notifyDataSetChanged();
-                Toast.makeText(this, "Here in Add To Do Button On Click", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(this, "Here in Add To Do Button On Click", Toast.LENGTH_SHORT).show();
                 this.finish();
                 break;
         }

@@ -26,7 +26,7 @@ public class ShowAllEvents extends ListActivity {
 
         String eventDetails = "";
 
-        for(Event x: CalendarView.items)
+        for(Event x: CalendarView.events)
         {
             eventDetails = "Event:		" + x.getEventHeading()+ "\n"+
                     "Date:		" + x.getEventDate() + "\n" +

@@ -66,7 +66,7 @@ public class NewActivity extends Activity implements View.OnClickListener{
             case R.id.bAddEvent:
                 Intent addEventIntent = new Intent(this, AddEvent.class);
                 addEventIntent.putExtra("CURRENT_DATE", selectedDate);
-                Toast.makeText(this, "Here in Add Event Button On Click", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(this, "Here in Add Event Button On Click", Toast.LENGTH_SHORT).show();
                 startActivity(addEventIntent);
                 this.finish();
                 break;
@@ -74,7 +74,7 @@ public class NewActivity extends Activity implements View.OnClickListener{
                 Intent addToDoIntent = new Intent(this, AddToDo.class);
                 addToDoIntent.putExtra("CURRENT_DATE", selectedDate);
 
-                Toast.makeText(this, "Here in Add To Do Button On Click", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(this, "Here in Add To Do Button On Click", Toast.LENGTH_SHORT).show();
                 startActivity(addToDoIntent);
                 this.finish();
                 break;

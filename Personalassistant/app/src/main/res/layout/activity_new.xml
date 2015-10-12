@@ -13,8 +13,9 @@
         android:layout_height="wrap_content"
         android:typeface="serif"
         android:textColor="#ffffff"
-        android:textSize="25dp"
-        android:background="#336699"/>
+        android:textStyle="bold"
+        android:textSize="27dp"
+        android:background="#D4CBC3"/>
 
     <Button
         android:id="@+id/bAddToDo"
@@ -23,9 +24,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:typeface="serif"
+        android:textStyle="bold"
         android:textColor="#ffffff"
-        android:textSize="25dp"
-        android:background="#336699"/>
+        android:textSize="27dp"
+        android:background="#525564"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_list"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true" />
 
 
 </LinearLayout>

@@ -44,6 +44,11 @@
             android:name=".NewActivity"
             android:label="@string/title_activity_new" >
         </activity>
+
+        <activity
+            android:name=".TimetableActivity"
+            android:label="Timetable" >
+        </activity>
     </application>
 
 </manifest>

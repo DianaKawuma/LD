@@ -4,6 +4,10 @@ package imy320_android_assignment.personalassistant;
 
 //import pack.CalendarView;
 
+//import com.example.imy_320.R;
+
+//import pack.CalendarView;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -42,13 +46,13 @@ public class AddEvent extends Activity implements View.OnClickListener{
             if(extras != null)
             {
                 selectedDate = extras.getString("CURRENT_DATE");
-                Toast.makeText(this, selectedDate+" 1", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(this, selectedDate+" 1", Toast.LENGTH_SHORT).show();
             }
         }
         else
         {
             selectedDate = (String)savedInstanceState.getSerializable("CURRENT_DATE");
-            Toast.makeText(this, selectedDate+" 2", Toast.LENGTH_SHORT).show();
+           // Toast.makeText(this, selectedDate+" 2", Toast.LENGTH_SHORT).show();
         }
 
         tvEventDate.setText(selectedDate);
@@ -62,10 +66,10 @@ public class AddEvent extends Activity implements View.OnClickListener{
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.bAddEvent:
-                CalendarView.items.add(new Event(et_eventHeading.getText().toString(),selectedDate,et_eventNote.getText().toString()));
-                CalendarView.adapter.setItems(CalendarView.items);
+                CalendarView.events.add(new Event(et_eventHeading.getText().toString(),selectedDate,et_eventNote.getText().toString()));
+                CalendarView.adapter.populateListOfEvents(CalendarView.events);
                 CalendarView.adapter.notifyDataSetChanged();
-                Toast.makeText(this, "Here in Add Event Button On Click", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(this, "Here in Add Event Button On Click", Toast.LENGTH_SHORT).show();
                 this.finish();
                 break;
         }

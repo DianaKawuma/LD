@@ -57,25 +57,23 @@
         android:listSelector="@android:color/transparent"
         android:numColumns="7"
         android:stretchMode="columnWidth"
-        android:background="#FFFFFF"/>
+        />
 
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.2">
+
         <Button
             android:id="@+id/bShowAllEvents"
             android:text="Show All Events"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="150dp"
+            android:layout_weight="0.1"
+            android:minHeight="80dp"
             android:textSize="30dp"
             android:textStyle="bold"
             android:typeface="serif"
             android:textColor="#ffffff"
-            android:background="#336699"
+            android:background="#D4CBC3"
             />
 
         <!-- android:layout_alignRight="@+id/bShowAllEvents" -->
@@ -85,24 +83,32 @@
             android:src="@drawable/ic_launcher"
             android:id="@+id/ImageButton01" />-->
 
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.2">
     <Button
         android:id="@+id/bShowAllToDos"
         android:text="Show All To Dos"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="150dp"
+        android:layout_weight="0.1"
+        android:minHeight="80dp"
         android:textSize="30dp"
         android:textStyle="bold"
         android:typeface="serif"
         android:textColor="#ffffff"
-        android:background="#336699"/>
-    </RelativeLayout>
+        android:background="#525564"/>
+
+
+    <Button
+        android:id="@+id/bTimetable"
+        android:text="Show Timetable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:minHeight="80dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="#ffffff"
+        android:background="#D4CBC3"/>
+
 
 </LinearLayout>
